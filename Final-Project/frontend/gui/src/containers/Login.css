@@ -1,0 +1,21 @@
+@media all and (min-width: 480px) {
+  .container {
+    padding: 5% 0;
+  }
+
+  .login-form {
+    padding: 10% 0;
+    padding-right: 35%;
+    padding-left: 35%;
+  }
+
+  .login-form FormItem {
+    margin: 0 auto;
+    max-width: 320px;
+  }
+  
+  .login-button {
+    width: 100%;
+  }
+
+}

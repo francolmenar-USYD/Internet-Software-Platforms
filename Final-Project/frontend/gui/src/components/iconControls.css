@@ -1,0 +1,74 @@
+@font-face {
+    font-family: FontAwesome;
+    src: url("../../node_modules/font-awesome/css/font-awesome.css");
+}
+
+.jp-icon-controls button:focus {
+    outline: none;
+}
+
+.jp-icon-controls button {
+    border: none;
+    background-color: transparent;
+}
+
+.jp-icon-controls .jp-download,
+.jp-icon-controls .jp-play,
+.jp-icon-controls .jp-repeat,
+.jp-icon-controls .jp-full-screen,
+.jp-icon-controls .jp-mute {
+    min-width: 42px;
+    color: #000;
+    padding: 0;
+}
+
+.jp-icon-controls a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    min-width: 42px;
+}
+
+@media only screen and (min-width: 920px) {
+    .jp-jplayer .jp-icon-controls {
+        padding-left: 250px;
+    }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 920px) {
+    .jp-jplayer .jp-icon-controls {
+        padding-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 830px) {
+    .jp-jplayer .jp-icon-controls {
+        padding-left: 175px;
+    }
+}
+
+.jp-jplayer .jp-icon-controls .jp-play i:before {
+    content: "\F04B";
+}
+
+.jp-jplayer.jp-state-playing .jp-icon-controls .jp-play i:before {
+    content: "\F04C";
+}
+
+.jp-jplayer.jp-state-muted .jp-icon-controls .jp-mute i:before {
+    content: "\F026";
+}
+
+.jp-jplayer.jp-state-volume-low .jp-icon-controls .jp-mute i:before {
+    content: "\F027";
+}
+
+.jp-jplayer.jp-state-volume-high .jp-icon-controls .jp-mute i:before {
+    content: "\F028";
+}
+
+.jp-jplayer.jp-state-volume-high .jp-icon-controls .jp-repeat i:before {
+    content: "\f01e";
+}
+ 
